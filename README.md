@@ -1,13 +1,22 @@
 # java-safezoos
 
-Using java-zoos as a starting point (https://github.com/LambdaSchool/java-zoos.git), add security to the application. 
+Using your java-zoos as a starting point (https://github.com/LambdaSchool/java-zoos.git), add OAuth2 security to the application. 
 
-Use (https://github.com/LambdaSchool/java-ourcourses.git) as a model for how to add security.
+* ROLE ADMIN should be allowed to access /admin /animals /zoos
 
-Security is:
-* ROLE ADMIN should be allowed to access /users and /admin
-* ROLE User should be allowed to access /animals and /zoos
-* ROLE Zoo should be allowed to access /zoos
-* ROLE animal should be allowed to access /animals
-* ROLE MGR (manager) should be allowed to only access /actuator (stretch goal).
-* Everyone should be allowd to access the swagger ui!
+* ROLE ZOODATA should be allowed to access /zoos
+
+* ROLE ANIMALDATA should be allowed to access /animals
+
+* ROLE MGR (manager) should be allowed access /actuator /animals /zoos.
+
+* Everyone (authenticated or not) should be allowd to access the swagger ui!
+
+* As a stretch goal
+  * add end point /users/add to add a new user
+  * add end point /users/delete/{id} to delete a user based off of id
+  * add end point /users/viewall to show all the users
+  * add end point /users/view/{id} to show a user based off of if
+  
+  * give /ADMIN access to /users
+  
