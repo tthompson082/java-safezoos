@@ -11,6 +11,8 @@ We will continue working on our zoo application, adding security to our zoos.
 ## Instructions
 Using your java-zoos as a starting point (https://github.com/LambdaSchool/java-zoos.git), add OAuth2 security to the application. 
 
+NOTE: The SeedData.java file is NOT MEANT TO BE USED DIRECTLY. You will need to modify it to fit your application. It is only provided as an example!!!
+
 * ROLE ADMIN should be allowed to access /admin /animals /zoos
 
 * ROLE ZOODATA should be allowed to access /zoos
