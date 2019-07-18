@@ -33,4 +33,6 @@ public class AnimalController
         Animal a = animalService.findAnimalByType(type);
         return new ResponseEntity<>(a, HttpStatus.OK);
     }
+
+
 }
